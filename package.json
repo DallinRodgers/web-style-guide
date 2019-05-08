@@ -1,0 +1,22 @@
+{
+  "name": "web-style-guide",
+  "version": "1.0.0",
+  "description": "Web style guide",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/styles.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DallinRodgers/web-style-guide.git"
+  },
+  "author": "Dallin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DallinRodgers/web-style-guide/issues"
+  },
+  "homepage": "https://github.com/DallinRodgers/web-style-guide#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
