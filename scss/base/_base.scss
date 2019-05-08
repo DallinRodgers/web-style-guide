@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* box-sizing is not inherited. This allows all elemnets to inherit the setting in the body styles */
+  box-sizing: inherit;
+}
+
+html {
+  /* This equals 10px, most defaul browser font size is 16px so 62.5% gives us 10px */
+  font-size: 62.5%;
+}
+
+body {
+  /* border or padding no longer add to height or width of elements */
+  box-sizing: border-box;
+}

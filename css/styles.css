@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -303,6 +304,22 @@ template {
 [hidden] {
   display: none; }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* box-sizing is not inherited. This allows all elemnets to inherit the setting in the body styles */
+  box-sizing: inherit; }
+
+html {
+  /* This equals 10px, most defaul browser font size is 16px so 62.5% gives us 10px */
+  font-size: 62.5%; }
+
+body {
+  /* border or padding no longer add to height or width of elements */
+  box-sizing: border-box; }
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -410,3 +427,7 @@ template {
 @media (min-width: 768px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px; } }
+
+.container {
+  font-style: "Roboto", sans-serif;
+  font-weight: 400; }

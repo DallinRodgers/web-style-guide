@@ -4,7 +4,7 @@
   "description": "Web style guide",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass scss/styles.scss css/style.css -w"
+    "compile:sass": "node-sass scss/styles.scss css/styles.css -w"
   },
   "repository": {
     "type": "git",
