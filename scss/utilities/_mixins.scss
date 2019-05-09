@@ -1,2 +1,31 @@
-@mixin mediaQuery {
+@mixin mediaQuery($breakpoint) {
+  @if $breakpoint == $break-sm {
+    @media (min-width: $break-sm) {
+      @content;
+    }
+  }
+  @if $breakpoint == $break-md {
+    @media (min-width: $break-md) {
+      @content;
+    }
+  }
+  @if $breakpoint == $break-lg {
+    @media (min-width: $break-lg) {
+      @content;
+    }
+  }
 }
+
+@mixin flexMixin($dir: null, $wrap: null, $justify: null) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+// body {
+//  @include mediaQuery($break-sm) {
+//     font-size: 50%;
+//     color: red;
+//  }
+// }

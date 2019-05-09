@@ -1,0 +1,20 @@
+// Links
+%linkPlaceholder {
+  text-decoration: none;
+  color: $color-default-text;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+// Images
+%imagesPlaceholder {
+  display: block;
+  margin: 0 auto;
+}
+// Nav items
+%navItemPlaceholder {
+  padding: 10px;
+  font-size: $large-font-size;
+  border-radius: 10px;
+}

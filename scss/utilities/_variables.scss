@@ -4,9 +4,14 @@ $color-success: rgb(74, 186, 14);
 $color-error: rgb(219, 89, 77);
 $color-warning: rgb(226, 121, 1);
 $color-info: rgb(142, 0, 139);
+$color-default-text: rgb(117, 117, 117);
+
+$color-white: #fff;
+$color-nav: rgb(61, 255, 213);
 
 // Font
-$default-font-size: 1.6rem;
+$default-font-size: 18px;
+$large-font-size: 20px;
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 $default-font-weight: 400;
 $light-font-weight: 300;
@@ -14,5 +19,6 @@ $heavy-font-weight: 700;
 $default-font-style: "Roboto", sans-serif;
 
 // Breakpoints
-$break-sm: 48rem;
-$break-lg: 140rem;
+$break-sm: 480px;
+$break-md: 768px;
+$break-lg: 1400px;
