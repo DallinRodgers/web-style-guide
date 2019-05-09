@@ -1,4 +1,12 @@
 .container {
   font-style: $default-font-style;
   font-weight: $default-font-weight;
+  padding: 20px;
+}
+
+.headline--secondary {
+  font-size: $large-font-size;
+  color: lighten($color: $color-default-text, $amount: 10%);
+  font-weight: $light-font-weight;
+  padding-left: 10px;
 }

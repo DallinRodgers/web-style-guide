@@ -1,0 +1,17 @@
+.nav {
+  padding: 20px 0;
+  text-align: center;
+
+  &__item {
+    @extend %navItemPlaceholder;
+    margin: 5px;
+
+    &:first-of-type {
+      background: $color-nav;
+
+      & a {
+        color: $color-white;
+      }
+    }
+  }
+}
