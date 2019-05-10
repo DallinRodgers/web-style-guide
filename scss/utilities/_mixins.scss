@@ -23,9 +23,14 @@
   justify-content: $justify;
 }
 
-// body {
-//  @include mediaQuery($break-sm) {
-//     font-size: 50%;
-//     color: red;
-//  }
-// }
+@mixin fontStyle($size: null, $weight: null, $color: null) {
+  font-family: "Oswald", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin center($width: null) {
+  margin: 0 auto;
+  width: $width;
+}

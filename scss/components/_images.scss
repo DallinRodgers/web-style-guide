@@ -1,3 +1,12 @@
-.img--logo {
+.img--logo,
+.img--avatar {
   @extend %imagesPlaceholder;
+}
+
+.img--frame {
+  outline: 1px solid $color-default-text;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  max-height: 199px;
 }

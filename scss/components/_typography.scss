@@ -1,12 +1,32 @@
-.container {
-  font-style: $default-font-style;
-  font-weight: $default-font-weight;
-  padding: 20px;
+.headline {
+  &--secondary {
+    @include fontStyle(
+      $large-font-size,
+      $light-font-weight,
+      lighten($color: $color-default-text, $amount: 10%)
+    );
+    padding-left: 10px;
+  }
+  &--primary {
+    @include fontStyle(null, null, $color-coral);
+    @include center(80%);
+    padding: 15px;
+  }
 }
 
-.headline--secondary {
-  font-size: $large-font-size;
-  color: lighten($color: $color-default-text, $amount: 10%);
-  font-weight: $light-font-weight;
+.link {
+  @include fontStyle(null, null, $color-default);
+}
+
+.blockquote {
+  @include center(80%);
+  @include fontStyle(
+    $xlarge-font-size,
+    $light-font-weight,
+    $color-default-text
+  );
   padding-left: 10px;
+  border-radius: 5px;
+  border-left: 10px $color-coral solid;
+  margin-bottom: 30px;
 }

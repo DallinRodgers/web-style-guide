@@ -1,0 +1,18 @@
+.form {
+  @include flexMixin(column, null, null);
+  &__label--hidden {
+    visibility: hidden;
+  }
+  &__input {
+    outline: none;
+    border: none;
+    border-bottom: 5px $color-coral solid;
+    @include fontStyle(null, $default-font-weight, $color-default-text);
+    @include center(90%);
+
+    padding: 0 10px 10px 10px;
+    &::placeholder {
+      @include fontStyle(null, $heavy-font-weight, $color-default-text);
+    }
+  }
+}

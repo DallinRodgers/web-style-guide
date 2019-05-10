@@ -12,10 +12,13 @@ ul {
 }
 // p
 p {
-  font-family: $default-font-style;
-  font-size: $default-font-size;
-  color: $color-default-text;
-  padding: 10px;
+  @include fontStyle(
+    $default-font-size,
+    $default-font-weight,
+    $color-default-text
+  );
+  padding: 20px 10px;
+  line-height: 1.2;
 }
 // a
 a {

@@ -4,14 +4,16 @@
 
   &__item {
     @extend %navItemPlaceholder;
-    margin: 5px;
 
     &:first-of-type {
-      background: $color-nav;
+      background: $color-coral;
 
       & a {
         color: $color-white;
       }
     }
+  }
+  @include mediaQuery($break-md) {
+    @include flexMixin(row, null, null);
   }
 }
