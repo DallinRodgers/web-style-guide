@@ -21,3 +21,15 @@
 .btn--info {
   background: $color-info;
 }
+
+.grid__col--12 {
+  .btn--default,
+  .btn--success,
+  .btn--error,
+  .btn--warning,
+  .btn--info {
+    @include mediaQuery($break-md) {
+      @include colButtonPlaceholder;
+    }
+  }
+}

@@ -15,5 +15,6 @@
   }
   @include mediaQuery($break-md) {
     @include flexMixin(row, null, null);
+    @include center(50%);
   }
 }

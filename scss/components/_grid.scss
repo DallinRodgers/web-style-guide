@@ -42,33 +42,54 @@
       }
     }
 
+    &--6 {
+      @include mediaQuery($break-md) {
+        @include flexMixin(row, null, center);
+      }
+    }
+
+    &--12 {
+      @include mediaQuery($break-md) {
+        @include flexMixin(row, null, center);
+      }
+    }
+
+    &--3.theme__colors,
+    &--4.theme__colors,
+    &--5.theme__colors,
+    &--6.theme__colors,
+    &--7.theme__colors,
+    &--8.theme__colors,
+    &--12.theme__colors {
+      @extend %themeColorSize;
+      @extend %centerText;
+    }
+
     &--3.theme__colors {
       background: $color-pink;
-      @extend %themeColorSize;
     }
     &--4.theme__colors {
       background: $color-default;
-      @extend %themeColorSize;
     }
     &--5.theme__colors {
       background: $color-success;
-      @extend %themeColorSize;
     }
     &--6.theme__colors {
       background: $color-blue;
-      @extend %themeColorSize;
     }
     &--7.theme__colors {
       background: $color-error;
-      @extend %themeColorSize;
+    }
+    &--7.centered {
+      @include mediaQuery($break-md) {
+        @include center(null);
+      }
     }
     &--8.theme__colors {
       background: $color-warning;
-      @extend %themeColorSize;
     }
     &--12.theme__colors {
       background: $color-coral;
-      @extend %themeColorSize;
     }
   }
 }

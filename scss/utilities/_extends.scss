@@ -24,12 +24,16 @@
   border: none;
   margin: 10px 0;
   width: 100%;
+  text-transform: uppercase;
   @extend %themeColorSize;
   @include fontStyle($large-font-size, $default-font-weight, $color-white);
-  text-transform: uppercase;
 }
 
 %themeColorSize {
   padding: 10px;
   border-radius: 5px;
+}
+
+%centerText {
+  text-align: center;
 }

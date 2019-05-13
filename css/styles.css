@@ -24,11 +24,11 @@ a {
   border: none;
   margin: 10px 0;
   width: 100%;
+  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  color: #fff;
-  text-transform: uppercase; }
+  color: #fff; }
 
 .btn--default,
 .btn--success,
@@ -37,6 +37,9 @@ a {
 .btn--info, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--12.theme__colors {
   padding: 10px;
   border-radius: 5px; }
+
+.grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--12.theme__colors {
+  text-align: center; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -359,7 +362,8 @@ p {
   font-weight: 400;
   color: #757575;
   padding: 20px 10px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  text-align: left; }
 
 .grid__row {
   padding: 1em 10px;
@@ -466,6 +470,18 @@ p {
       margin-top: 0;
       flex-basis: 100%; } }
 
+@media (min-width: 768px) {
+  .grid__col--6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
+@media (min-width: 768px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
 .grid__col--3.theme__colors {
   background: #fa70ff; }
 
@@ -480,6 +496,10 @@ p {
 
 .grid__col--7.theme__colors {
   background: #db594d; }
+
+@media (min-width: 768px) {
+  .grid__col--7.centered {
+    margin: 0 auto; } }
 
 .grid__col--8.theme__colors {
   background: #e27901; }
@@ -511,6 +531,15 @@ p {
 .btn--info {
   background: #8e008b; }
 
+@media (min-width: 768px) {
+  .grid__col--12 .btn--default,
+  .grid__col--12 .btn--success,
+  .grid__col--12 .btn--error,
+  .grid__col--12 .btn--warning,
+  .grid__col--12 .btn--info {
+    margin: 10px 15px;
+    width: 15%; } }
+
 .form {
   display: flex;
   flex-direction: column; }
@@ -536,7 +565,9 @@ p {
   padding: 10px;
   width: 100%;
   height: auto;
-  max-height: 199px; }
+  max-height: 199px;
+  max-width: 400px;
+  margin: 0 auto; }
 
 .nav {
   padding: 20px 0;
@@ -548,7 +579,9 @@ p {
   @media (min-width: 768px) {
     .nav {
       display: flex;
-      flex-direction: row; } }
+      flex-direction: row;
+      margin: 0 auto;
+      width: 50%; } }
 
 .headline--secondary {
   font-family: "Oswald", sans-serif;

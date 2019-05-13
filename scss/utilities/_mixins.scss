@@ -1,18 +1,6 @@
 @mixin mediaQuery($breakpoint) {
-  @if $breakpoint == $break-sm {
-    @media (min-width: $break-sm) {
-      @content;
-    }
-  }
-  @if $breakpoint == $break-md {
-    @media (min-width: $break-md) {
-      @content;
-    }
-  }
-  @if $breakpoint == $break-lg {
-    @media (min-width: $break-lg) {
-      @content;
-    }
+  @media (min-width: $break-md) {
+    @content;
   }
 }
 
@@ -33,4 +21,9 @@
 @mixin center($width: null) {
   margin: 0 auto;
   width: $width;
+}
+
+@mixin colButtonPlaceholder {
+  margin: 10px 15px;
+  width: 15%;
 }
