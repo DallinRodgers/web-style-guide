@@ -22,15 +22,21 @@ a {
 .btn--info {
   outline: none;
   border: none;
-  padding: 10px;
   margin: 10px 0;
-  border-radius: 5px;
   width: 100%;
   font-family: "Oswald", sans-serif;
   font-size: 22px;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase; }
+
+.btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--12.theme__colors {
+  padding: 10px;
+  border-radius: 5px; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -459,6 +465,27 @@ p {
     .grid__col--12 {
       margin-top: 0;
       flex-basis: 100%; } }
+
+.grid__col--3.theme__colors {
+  background: #fa70ff; }
+
+.grid__col--4.theme__colors {
+  background: #01cfda; }
+
+.grid__col--5.theme__colors {
+  background: #4aba0e; }
+
+.grid__col--6.theme__colors {
+  background: #5489d8; }
+
+.grid__col--7.theme__colors {
+  background: #db594d; }
+
+.grid__col--8.theme__colors {
+  background: #e27901; }
+
+.grid__col--12.theme__colors {
+  background: #34dbb7; }
 
 @media (min-width: 768px) {
   [class^="grid__col"] + [class^="grid__col"] {
